@@ -12,7 +12,7 @@
     <!-- Datatables responsive -->
     <link href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap5.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="{{asset('/css/styles.css') }}" rel="stylesheet">
+    <link href="{{secure_asset('/css/styles.css') }}" rel="stylesheet">
     <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
 
