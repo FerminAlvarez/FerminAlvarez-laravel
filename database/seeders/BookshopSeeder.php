@@ -21,27 +21,27 @@ class BookshopSeeder extends Seeder
                 'city' => 'Bahía Blanca',
                 'street' => 'Fitz Roy',
                 'number' => '92',
-                'user_id' => '2'
+                'user_email' => 'donquijote@donquijote.com'
             ],
             [
                 'name' => 'Cúspide',
                 'city' => 'CABA',
                 'street' => 'Avenida Santa Fe',
                 'number' => '3492',
-                'user_id' => '3'
+                'user_email' => 'cuspide@cuspide.com'
             ],
             [
                 'name' => 'Cúspide',
                 'city' => 'CABA',
                 'street' => 'Avenida Rivadavia',
                 'number' => '5045',
-                'user_id' => '3'
+                'user_email' => 'cuspide@cuspide.com'
             ]
         ];
         DB::table('bookshops')->insert($data);
         DB::table('bookshops')->insert([
             'name' => "BuscaLibre",
-            'user_id' => '4'
+            'user_email' => 'buscalibre@buscalibre.com'
         ]);
     }
 }

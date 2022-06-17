@@ -17,7 +17,7 @@ class SubscribedSeeder extends Seeder
     {
         $data = [
             [
-                'id_user' => '1',
+                'email' => '1',
                 'ISBN' => '9786073132411',
             ],
             [
