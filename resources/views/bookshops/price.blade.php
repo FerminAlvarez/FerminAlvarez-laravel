@@ -22,15 +22,15 @@
             <p class="fw-bold">
                 Precio actual en el sistema: <span style="color:green">{{$book->pivot->price}}</span>
                 <br>
-                <span>Precio en el sitio web: <span style="color:green">{{$onlinePrice['Precio']}}</span>
+                <span>Precio en el sitio web: <span style="color:green">{{$onlinePrice['precio']}}</span>
                 <br>
-                <a href="{{$onlinePrice['Link']}}" class="fw-bold mb-1 text-decoration-none" target="_blank">
+                <a href="{{$onlinePrice['link']}}" class="fw-bold mb-1 text-decoration-none" target="_blank">
                     Enlace al libro de la tienda.
                 </a>
                 <form action="/bookshop/{{$bookshopID}}/book/{{$book->ISBN}}/update" method="POST" class="text-center">
                     @csrf
                     @method('PUT')
-                    <input type="hidden" name="price" value="{{$onlinePrice['Precio']}}">
+                    <input type="hidden" name="price" value="{{$onlinePrice['precio']}}">
                     <button type="button" class="btn btn-outline-secondary me-2">
                         <a href="/bookshops/{{$bookshopID}}">Cancelar</a>
                     </button>
